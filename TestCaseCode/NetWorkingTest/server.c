@@ -31,10 +31,12 @@ void timeCount()
 
     for (;;)
     {
+        sleep(1);
         printf("waiting... %d\n", count++);
 
         t2 = clock();
-        if ((t2 - t1) > (3 * CLOCKS_PER_SEC))
+        //if ((t2 - t1) > (3 * CLOCKS_PER_SEC))
+        if(count > 5)
         {
             returnTrue = true;
             // break;

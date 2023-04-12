@@ -65,19 +65,19 @@ void *exeTestFunc(void *a)
         char tempstr[50];
         const char *boot = "boot";
 
-        //scanf("%s", tempstr);
+        scanf("%s", tempstr);
         sleep(1);
 
-        //if (!strcmp(tempstr, boot))
-        if(message[0] == '1')
+        if (!strcmp(tempstr, boot))
+        //if(message[0] == '1')
         {
-            //printf("입력된 값: %s\n", tempstr);
+            printf("입력된 값: %s\n", tempstr);
             printf("성공한 예제\n");
-            //testfunc();
+            testfunc();
         }
         else
         {
-            printf("실패한 예제\n");
+            printf("실패한 예제 aaa \n");
         }
     }
 

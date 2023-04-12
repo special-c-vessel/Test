@@ -12,6 +12,7 @@ int main()
     void (*func_ptr)(int *arr, int n);
 
     // choice가 4 이므로 func_ptr은 아무것도 가리키지 않는다.
+    // 이 부분을 서버와 연결시킨다.
     if (choice == 1)
     {
         func_ptr = selection_sort;
